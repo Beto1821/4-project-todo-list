@@ -1,8 +1,12 @@
 #criar-tarefa {
-    margin: 20px auto;
-    text-align: center; 
+  margin: 20px auto;
+  text-align: center;
 }
 
 .selected {
-    background-color: gray;
+  background-color: gray;
+}
+
+.complete {
+  text-decoration: line-through;
 }

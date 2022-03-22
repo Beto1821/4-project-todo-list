@@ -22,5 +22,6 @@ function alteraCor(event) {
     }
     event.target.classList.add('selected');
     
+    
 };
 acendeLi.addEventListener("click", alteraCor);
