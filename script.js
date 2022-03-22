@@ -18,6 +18,7 @@ console.log(acendeLi);
 function alteraCor(event) {
     const selecionada = document.querySelector('.selected');
     if(selecionada) {
+        selecionada.classList.add('completed')
         selecionada.classList.remove('selected');
     }
     event.target.classList.add('selected');
