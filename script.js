@@ -1,4 +1,4 @@
-let btn = document.querySelector('#criar-tarefa');
+const btn = document.querySelector('#criar-tarefa');
 let listaTarefas = document.getElementById('lista-tarefas');
 
 function addText() {
@@ -24,13 +24,21 @@ acendeLi.addEventListener('click', alteraCor);
 
 function tiraRisco(event) {
   event.target.classList.toggle('completed');
- 
 }
 
 acendeLi.addEventListener('dblclick', tiraRisco);
 
-let btn2 = document.querySelector("#apaga-tudo");
-btn2.addEventListener("click", function() {
-    
-    location.reload();
+const btn2 = document.querySelector('#apaga-tudo');
+btn2.addEventListener('click', function () {
+  location.reload();
 });
+
+function removeFinalizados() {
+  const finalizado = document.querySelectorAll('.completed');
+  for (let i = 0; i < finalizado.length; i += 1) {
+    finalizado[i].remove();
+  }
+}
+
+const btn3 = document.querySelector('#remover-finalizados');
+btn3.addEventListener('click', removeFinalizados);

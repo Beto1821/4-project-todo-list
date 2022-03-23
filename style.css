@@ -1,5 +1,6 @@
 body {
-  background-color: rgb(216, 185, 208);
+  background: linear-gradient(rgb(39, 36, 36), rgb(161, 155, 155));
+    
 }
 
 #criar-tarefa {
@@ -12,6 +13,25 @@ body {
 }
 
 .completed {
-  text-decoration: line-through solid rgb(0, 0, 0);
+  text-decoration: line-through solid rgb(0 , 0 , 0);
 
+}
+header {
+    background-color: rgb(185, 207, 207);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1;
+    font-weight: 200;
+}
+p {
+    background-color: rgb(48, 44, 44);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1;
+    font-weight: 200;
+    color: white;
 }
