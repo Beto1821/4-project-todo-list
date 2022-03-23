@@ -72,8 +72,18 @@ btn5.addEventListener('click', cima);
 function baixo() {
   const selecionada = document.querySelector('.selected');
   if (selecionada !== listaTarefas.lastElementChild && selecionada) {
-    listaTarefas.insertBefore(selecionada, selecionada.nextSibling.nextSibling)
+    listaTarefas.insertBefore(selecionada, selecionada.nextSibling.nextSibling);
   }
 }
 const btn6 = document.querySelector('#mover-baixo');
 btn6.addEventListener('click', baixo);
+
+function removeSelecionado() {
+  const finalizado = document.querySelectorAll('.selected');
+  for (let i = 0; i < finalizado.length; i += 1) {
+    finalizado[i].remove();
+  }
+}
+
+const btn7 = document.querySelector('#remover-selecionado');
+btn7.addEventListener('click', removeSelecionado);
